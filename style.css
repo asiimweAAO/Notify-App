@@ -1,0 +1,31 @@
+body {
+    background: linear-gradient(135deg, #0d233a 0%, #1b3a5b 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.brand-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.btn-primary {
+    background-color: #0d233a;
+    border-color: #0d233a;
+}
+
+.btn-primary:hover {
+    background-color: #1b3a5b;
+    border-color: #1b3a5b;
+}
+
+.text-accent {
+    color: #ffc107;
+}
