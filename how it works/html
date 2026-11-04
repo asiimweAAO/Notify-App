@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOTIFY | How the Website Works</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --background: #0d1019;
+      --surface: #191e2b;
+      --surface-deep: #111725;
+      --teal: #35b7b5;
+      --teal-light: #8bd6d4;
+      --text: #f3f5fa;
+      --muted: #bac2d0;
+      --line: rgba(255,255,255,.11);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+    a { color: var(--teal-light); text-decoration: none; }
+    a:hover { color: white; }
+    .site-header {
+      padding: 16px clamp(18px, 6vw, 76px);
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      background: #0d1019;
+    }
+    .brand {
+      color: var(--teal-light);
+      font-size: 1.85rem;
+      font-weight: 850;
+      letter-spacing: -.7px;
+      white-space: nowrap;
+    }
+    .brand i { color: var(--teal); }
+    .site-nav { display: flex; gap: 22px; flex-wrap: wrap; }
+    .site-nav a { color: #d9deea; font-size: .9rem; }
+    .site-nav a:hover, .site-nav a:focus { color: var(--teal-light); }
+    .hero {
+      text-align: center;
+      padding: 68px 20px 58px;
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(53,183,181,.13), transparent 55%),
+        linear-gradient(135deg, #101522, #0d1019);
+      border-bottom: 1px solid var(--line);
+    }
+    .eyebrow {
+      color: var(--teal-light);
+      font-size: .82rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 850px;
+      margin: 12px auto;
+      font-size: clamp(2rem, 4.5vw, 3.25rem);
+      line-height: 1.13;
+      font-weight: 850;
+      letter-spacing: -1.2px;
+    }
+    .hero h1 span { color: var(--teal-light); }
+    .hero p {
+      max-width: 780px;
+      margin: 16px auto 0;
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+    main { max-width: 1100px; margin: auto; padding: 42px 18px 65px; }
+    .section-block { margin-bottom: 27px; }
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 17px;
+      padding: clamp(20px, 3vw, 31px);
+    }
+    .section-heading {
+      display: flex;
+      align-items: flex-start;
+      gap: 13px;
+      margin-bottom: 20px;
+    }
+    .number {
+      display: inline-grid;
+      place-items: center;
+      flex: 0 0 39px;
+      height: 39px;
+      border-radius: 50%;
+      background: rgba(53,183,181,.15);
+      color: var(--teal-light);
+      font-weight: 850;
+    }
+    h2 { font-size: 1.42rem; font-weight: 800; margin: 0 0 4px; }
+    h3 { font-size: 1.05rem; font-weight: 750; color: #f2f5fb; }
+    .section-subtitle { color: var(--muted); margin: 0; }
+    .copy { color: var(--muted); margin: 0 0 15px; }
+    .copy:last-child { margin-bottom: 0; }
+    .info-card {
+      height: 100%;
+      background: var(--surface-deep);
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      padding: 20px;
+    }
+    .info-card .icon {
+      color: var(--teal-light);
+      font-size: 1.55rem;
+      margin-bottom: 9px;
+    }
+    .info-card p { color: var(--muted); margin: 0; }
+    .homepage-item {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 14px;
+      padding: 17px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .homepage-item:last-child { border-bottom: 0; padding-bottom: 0; }
+    .homepage-item:first-child { padding-top: 0; }
+    .homepage-icon {
+      display: grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 11px;
+      color: var(--teal-light);
+      background: rgba(53,183,181,.12);
+      font-size: 1.2rem;
+    }
+    .homepage-item h3 { margin: 0 0 4px; }
+    .homepage-item p { color: var(--muted); margin: 0; }
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 11px;
+      margin: 23px 0;
+    }
+    .flow-item {
+      background: var(--surface-deep);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 15px 11px;
+      text-align: center;
+    }
+    .flow-item i {
+      display: block;
+      color: var(--teal-light);
+      font-size: 1.5rem;
+      margin-bottom: 7px;
+    }
+    .flow-item strong { display: block; font-size: .9rem; line-height: 1.35; }
+    .flow-item small { display: block; color: var(--muted); margin-top: 5px; line-height: 1.4; }
+    .subsection {
+      background: var(--surface-deep);
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      padding: 19px;
+      height: 100%;
+    }
+    .subsection h3 { color: var(--teal-light); margin-bottom: 8px; }
+    .subsection p { color: var(--muted); margin: 0; }
+    .note {
+      padding: 15px 17px;
+      color: var(--muted);
+      background: rgba(53,183,181,.08);
+      border-left: 3px solid var(--teal);
+      border-radius: 0 9px 9px 0;
+    }
+    .example-phone {
+      max-width: 700px;
+      margin: 20px auto 0;
+      padding: 17px;
+      border-radius: 19px;
+      border: 1px solid rgba(255,255,255,.16);
+      background: #090e18;
+      box-shadow: 0 18px 45px rgba(0,0,0,.22);
+    }
+    .phone-heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #e8edf6;
+      margin-bottom: 13px;
+    }
+    .phone-heading small { color: #9da8bb; }
+    .phone-alert {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 13px;
+      margin-top: 9px;
+      background: #202637;
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: 10px;
+    }
+    .phone-alert i { color: var(--teal-light); font-size: 1.25rem; }
+    .phone-alert strong { display: block; font-size: .92rem; }
+    .phone-alert p { color: var(--muted); margin: 2px 0 0; font-size: .85rem; }
+    .phone-alert small { display: block; color: #98a4b8; margin-top: 4px; }
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 22px 18px;
+      color: #9ba5b7;
+      text-align: center;
+    }
+    @media (max-width: 800px) {
+      .flow { grid-template-columns: repeat(2, 1fr); }
+      .flow-item:last-child { grid-column: 1 / -1; }
+    }
+    @media (max-width: 575px) {
+      .site-nav { gap: 10px 15px; }
+      .hero { padding-top: 48px; }
+      .flow { grid-template-columns: 1fr; }
+      .flow-item:last-child { grid-column: auto; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top"><i class="bi bi-bell-fill"></i> NOTIFY</a>
+    <nav class="site-nav" aria-label="Page navigation">
+      <a href="#account">Account access</a>
+      <a href="#homepage">Homepage guide</a>
+      <a href="#process">Notification process</a>
+ 
+    </nav>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="eyebrow">Student updates made simple</div>
+    <h1>How <span>NOTIFY</span> works from Moodle to your phone</h1>
+    <p>NOTIFY is intended to help students keep up with academic activity on Moodle. This guide explains how a student accesses the service, what the homepage sections are for, and how new Moodle information is expected to become a phone notification.</p>
+  </section>
+
+  <main>
+    <section class="section-block panel" id="account">
+      <div class="section-heading">
+        <span class="number">1</span>
+        <div>
+          <h2>Accessing a NOTIFY account</h2>
+          <p class="section-subtitle">Students use a NOTIFY account to manage the service and connect their Moodle account.</p>
+        </div>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <article class="info-card">
+            <div class="icon"><i class="bi bi-box-arrow-in-right"></i></div>
+            <h3>For a student who already has an account</h3>
+            <p>The student opens the NOTIFY website and selects <strong>Log In</strong>. They enter the email address and password they used when registering for NOTIFY. After the details have been checked successfully, the student is taken to their account homepage, where they can view their notification settings and the Moodle account connected to their profile.</p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="info-card">
+            <div class="icon"><i class="bi bi-person-plus"></i></div>
+            <h3>For a student who does not have an account</h3>
+            <p>The student selects <strong>Sign Up</strong> on the NOTIFY website and completes the registration details requested by the service, such as their name and email address. They create a password and complete any required email verification. Once registration is complete, they can use the new email address and password to log in to NOTIFY and continue with the Moodle connection process.</p>
+          </article>
+        </div>
+      </div>
+      <p class="note mt-3 mb-0"><i class="bi bi-info-circle me-2"></i>A NOTIFY account is separate from a Moodle account. A real version should never ask students to share their Moodle password directly with an untrusted service; the Moodle connection should use an approved, secure authorization method.</p>
+    </section>
+
+    <section class="section-block panel" id="homepage">
+      <div class="section-heading">
+        <span class="number">2</span>
+        <div>
+          <h2>What each part of the homepage does</h2>
+          <p class="section-subtitle">The homepage introduces NOTIFY and helps visitors understand and navigate the service.</p>
+        </div>
+      </div>
+
+      <div class="homepage-item">
+        <div class="homepage-icon"><i class="bi bi-bell"></i></div>
+        <div>
+          <h3>Navigation bar</h3>
+          <p>The bell icon and NOTIFY name identify the website. The navigation links direct visitors to the main areas of the site, such as Features, Solutions, Pricing, Resources, and Security. The Log In button is for returning users</p>
+        </div>
+      </div>
+      
+      <div class="homepage-item">
+        <div class="homepage-icon"><i class="bi bi-bell-fill"></i></div>
+        <div>
+          <h3>Notification dashboard preview</h3>
+          <p>This visual section gives visitors an example of the type of messages NOTIFY may display, such as a new lecture note, an assignment deadline, released marks, or a lecturer's announcement. It helps visitors picture how notifications could be organized. The sample messages are illustrations and are not live Moodle information.</p>
+        </div>
+      </div>
+      <div class="homepage-item">
+        <div class="homepage-icon"><i class="bi bi-grid"></i></div>
+        <div>
+          <h3>Features section</h3>
+          <p>The feature cards explain the main benefits the project aims to provide. These include bringing different course updates together, presenting information clearly, and helping students notice important changes without repeatedly checking Moodle themselves.</p>
+        </div>
+      </div>
+     
+      <div class="homepage-item">
+        <div class="homepage-icon"><i class="bi bi-info-circle"></i></div>
+        <div>
+          <h3>About the programme and current situation</h3>
+          <p>The About section explains why the project was proposed and the student problem it is intended to address. The Current Situation section tells visitors whether the system is still being planned or developed. It should be kept accurate so visitors do not mistake a proposed feature for one that is already working.</p>
+        </div>
+      </div>
+     
+            
+    </section>
+
+    <section class="section-block panel" id="process">
+      <div class="section-heading">
+        <span class="number">3</span>
+        <div>
+          <h2>How NOTIFY gets information from Moodle</h2>
+          <p class="section-subtitle">The proposed process for turning a change in a Moodle course into a notification on a student's phone.</p>
+        </div>
+      </div>
+
+      <p class="copy">After the student has logged in to NOTIFY, they choose to connect their Moodle account. The connection must be set up using a method approved by the university or Moodle administrator. Depending on what the Moodle site allows, this could use an approved Moodle integration that lets NOTIFY receive update events, or a scheduled check that asks Moodle whether new items have appeared. The exact method must be agreed with the university; this webpage does not itself connect to Moodle.</p>
+
+      <div class="flow" aria-label="Notification process overview">
+        <div class="flow-item"><i class="bi bi-mortarboard"></i><strong>1. Moodle changes</strong><small>A lecturer adds or changes course information.</small></div>
+        <div class="flow-item"><i class="bi bi-arrow-left-right"></i><strong>2. NOTIFY checks</strong><small>The approved connection reports or finds the change.</small></div>
+        <div class="flow-item"><i class="bi bi-funnel"></i><strong>3. New item identified</strong><small>NOTIFY checks whether it is new and relevant.</small></div>
+        <div class="flow-item"><i class="bi bi-bell"></i><strong>4. Alert prepared</strong><small>A clear message is created for the student.</small></div>
+        <div class="flow-item"><i class="bi bi-phone"></i><strong>5. Phone receives it</strong><small>A push notification is delivered to the device.</small></div>
+      </div>
+
+      <div class="row g-3 mt-1">
+        <div class="col-md-6">
+          <article class="subsection">
+            <h3><i class="bi bi-search me-2"></i>How it gets new information</h3>
+            <p>NOTIFY checks the Moodle courses connected to the student's account. It looks for new or updated items such as lecturer announcements, uploaded lecture notes, assignment instructions, changes to coursework deadlines, and marks that have been released. It records what it has already checked and compares that information with the latest Moodle activity. This comparison helps the system identify a new change rather than treating every old item as a new notification.</p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="subsection">
+            <h3><i class="bi bi-clock-history me-2"></i>When it sends a notification</h3>
+            <p>A notification is prepared when NOTIFY detects a new or relevant change in a course the student is enrolled in. For example, it may send an alert soon after a lecturer uploads notes or posts an announcement. It may also send a reminder when a configured coursework deadline is approaching. The timing depends on how frequently Moodle updates can be checked and on the notification rules selected for the service.</p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="subsection">
+            <h3><i class="bi bi-question-circle me-2"></i>Why it sends a notification</h3>
+            <p>The purpose is to draw the student's attention to academic information that may need action. A student might otherwise miss a new assignment, fail to notice a change in a deadline, overlook a lecturer's announcement, or not realize that marks or learning materials are available. NOTIFY is intended to reduce the need for students to keep opening Moodle just to check whether something has changed.</p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="subsection">
+            <h3><i class="bi bi-send me-2"></i>How it sends the notification</h3>
+            <p>After identifying a new item, NOTIFY prepares a short message containing details such as the course name, the type of update, and the time it was posted. The system then sends that message through a suitable push-notification service for the student's phone or browser. The student must have enabled notifications and granted the necessary permission. Tapping the alert should open NOTIFY or the relevant Moodle page so the student can read the full information.</p>
+          </article>
+        </div>
+      </div>
+
+      <h3 class="mt-4">Examples of notifications a student may receive</h3>
+      <p class="copy">The examples below illustrate how messages could appear in a phone notification panel. They are sample messages, not live notifications.</p>
+      <div class="example-phone">
+        <div class="phone-heading">
+          <strong><i class="bi bi-bell-fill me-2" style="color:var(--teal)"></i>Phone notification panel</strong>
+          <small>Example alerts</small>
+        </div>
+        <article class="phone-alert">
+          <i class="bi bi-journal-text"></i>
+          <div><strong>NOTIFY · New lecture notes uploaded</strong><p>Business Computing: your lecturer has uploaded new learning material.</p><small>Tap to view the course on Moodle</small></div>
+        </article>
+        <article class="phone-alert">
+          <i class="bi bi-calendar-event"></i>
+          <div><strong>NOTIFY · Coursework deadline reminder</strong><p>Human Resource Management: a coursework deadline is approaching.</p><small>Tap to view the coursework details</small></div>
+        </article>
+        <article class="phone-alert">
+          <i class="bi bi-megaphone"></i>
+          <div><strong>NOTIFY · New lecturer announcement</strong><p>A new announcement has been posted in one of your Moodle courses.</p><small>Tap to read the announcement</small></div>
+        </article>
+        <article class="phone-alert">
+          <i class="bi bi-clipboard-check"></i>
+          <div><strong>NOTIFY · Marks are available</strong><p>New coursework marks have been released for one of your courses.</p><small>Tap to check Moodle</small></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block panel" id="privacy">
+      <div class="section-heading">
+        <span class="number">4</span>
+        <div>
+          <h2>Security, permissions, and student control</h2>
+          <p class="section-subtitle">The system will need to protect student accounts and respect notification choices.</p>
+        </div>
+      </div>
+      <p class="copy">Before a real NOTIFY service can read Moodle course activity, the university or Moodle administrator must approve the connection and the information the service is allowed to access. NOTIFY should request only the access needed to identify updates for the student. Authentication information should be handled securely, and students should be able to disconnect their Moodle account or change their notification preferences.</p>
+      <p class="copy">The student must also grant permission for phone or browser notifications. If notifications are blocked, the student may still be able to view updates inside the NOTIFY website, but the phone may not display push alerts. The system should avoid sending duplicate alerts and should not show private course information to people who are not authorized to see it.</p>
+      <p class="note mb-0"><strong>Project status:</strong> This page explains the proposed workflow. The Moodle connection, automatic update checking, and real phone notifications will only work after the required university approval, integration, server-side programming, and notification-service setup have been completed.</p>
+    </section>
+
+    <section class="section-block panel">
+      <div class="section-heading">
+        <span class="number">5</span>
+        <div>
+          <h2>Finishing a NOTIFY session</h2>
+          <p class="section-subtitle">The student can safely leave the service after checking their updates.</p>
+        </div>
+      </div>
+      <p class="copy">When the student has finished reviewing the notifications, they can return to the NOTIFY account menu and select <strong>Log Out</strong>. This ends the signed-in session on that device. Whether notifications continue to arrive after logout depends on the final system design and the student's notification settings. For example, a properly configured service may continue sending permitted background alerts without leaving the student signed in on the website. The logout process should therefore end account access while respecting the notification preferences the student has chosen.</p>
+    </section>
+  </main>
+
+  <footer>
+    <i class="bi bi-bell-fill me-2" style="color:var(--teal)"></i>
+    <strong style="color:#e8edf6">NOTIFY</strong> · Student updates made simple · Proposed system explanation
+  </footer>
+</body>
+</html>
