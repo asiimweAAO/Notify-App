@@ -1,0 +1,48 @@
+body {
+    background-color: #111827;
+    font-family: Arial;
+    color: white;
+    margin: 0;
+}
+
+.features {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h2 {
+    color: white;
+    font-size: 28px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #1f2937;
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.card h3 {
+    color: #40c4b5;
+}
+
+.card p {
+    color: lightgray;
+    line-height: 1.5;
+}
+
+/* For small screens */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
