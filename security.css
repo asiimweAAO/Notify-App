@@ -1,0 +1,75 @@
+/* Dashboard Outer Wrapper */
+.dashboard-container {
+  background-color: #0d1117;
+  border: 1px solid #21262d;
+  max-width: 650px;
+  margin: 0 auto;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Glowing Status Indicator */
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #238636;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 8px #238636;
+}
+
+/* Base Card Style matching the dashboard theme */
+.custom-card {
+  background-color: #161b22;
+  border-radius: 12px;
+  border-left-width: 4px !important;
+  border-top: 1px solid #30363d;
+  border-right: 1px solid #30363d;
+  border-bottom: 1px solid #30363d;
+}
+
+/* Color Accent Left Borders */
+.border-critical {
+  border-left-color: #a371f7 !important;
+}
+.border-info {
+  border-left-color: #388bfd !important;
+}
+.border-warning {
+  border-left-color: #d29922 !important;
+}
+
+/* Typography & Badges */
+.badge-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.text-purple { color: #a371f7; }
+.text-blue { color: #388bfd; }
+.text-warning-custom { color: #d29922; }
+
+/* Status Text Helpers */
+.status-delivered {
+  color: #3fb950;
+  font-weight: 500;
+}
+.status-pending {
+  color: #d29922;
+  font-weight: 500;
+}
+.status-alert {
+  color: #f85149;
+  font-weight: 500;
+}
+
+/* Tag Pills */
+.tag-pill {
+  background-color: #21262d;
+  color: #c9d1d9;
+  border: 1px solid #30363d;
+  font-weight: 400;
+  font-size: 0.75rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+}
