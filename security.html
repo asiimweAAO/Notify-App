@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Security Guidelines - Notify</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="security.css" />
+</head>
+<body class="bg-dark text-light">
+
+  <div class="dashboard-container p-4 rounded-4 my-5">
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4 border-bottom border-secondary pb-3">
+      <div>
+        <h3 class="fw-bold m-0 text-white">Security & Data Protection</h3>
+        <p class="text-muted small mb-0">How Notify keeps your Moodle account safe</p>
+      </div>
+      <div class="d-flex align-items-center small">
+        <span class="status-dot me-2"></span>
+        <span class="text-success fw-medium">Active Protection</span>
+      </div>
+    </div>
+
+    <!-- Section 1: Moodle Account & Tokens -->
+    <div class="card custom-card border-info mb-4">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <span class="badge-label text-blue">MOODLE CONNECTION</span>
+          <span class="status-delivered small">Encrypted</span>
+        </div>
+        <h5 class="card-title fw-bold mb-2 text-white">How Your Moodle Account is Linked</h5>
+        <p class="card-text text-light small mb-3">
+          Notify connects to your institutional Moodle instance using official Web Service API Tokens or OAuth2 SSO. 
+          We <strong>never</strong> store your raw Moodle password in clear text.
+        </p>
+      </div>
+    </div>
+
+    <!-- Section 2: Password Best Practices -->
+    <div class="card custom-card border-warning mb-4">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <span class="badge-label text-warning-custom">RECOMMENDED</span>
+          <span class="status-pending small">Password Safety</span>
+        </div>
+        <h5 class="card-title fw-bold mb-2 text-white">Password Requirements & Habits</h5>
+        <ul class="text-light small mb-3 ps-3">
+          <li class="mb-1"><strong>Length & Complexity:</strong> Use at least 12 characters combining uppercase letters, numbers, and symbols.</li>
+          <li class="mb-1"><strong>Avoid Re-use:</strong> Never use your Moodle or university password for third-party websites or personal social media.</li>
+          <li class="mb-1"><strong>Use a Password Manager:</strong> Store complex, unique passwords in a password manager (e.g., Bitwarden, 1Password).</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section 3: Threat Watchlist -->
+    <div class="card custom-card border-critical mb-4">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <span class="badge-label text-purple">THREAT WATCHLIST</span>
+          <span class="status-alert small">Stay Vigilant</span>
+        </div>
+        <h5 class="card-title fw-bold mb-2 text-white">What to Watch Out For</h5>
+        <ul class="text-light small mb-3 ps-3">
+          <li class="mb-1"><strong>Phishing Alerts:</strong> Notify will <em>never</em> ask for your Moodle password via email, SMS, or Slack.</li>
+          <li class="mb-1"><strong>Shared Devices:</strong> Always log out of Notify and Moodle when using shared university library terminals.</li>
+          <li class="mb-1"><strong>Unrecognized Notifications:</strong> If you receive alerts for courses you aren't enrolled in, update your tokens immediately.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Status Info -->
+    <div class="d-flex justify-content-between align-items-center mt-3 pt-2">
+      <p class="text-blue text-decoration-none small"> A Secure Notify </p>
+    </div>
+  </div>
+
+</body>
+</html>
