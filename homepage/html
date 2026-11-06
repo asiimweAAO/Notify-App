@@ -177,6 +177,38 @@
     </div>
 
 
+
+
+
+
+
+
+
+    
+    
+    <section class="section" id="DEMO">
+<div class="">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+     <div class="d-flex align-items-center small">
+        <span class="status-dot me-2"></span>
+        <span class="text-success fw-medium">Notify & Motivate</span>
+     </div>
+    </div>
+    
+  </div>
+  
+   </section>
+
+
+
+
+    
+
+
+
+
+    
+
     <section class="section" id="features">
 
       <div class="section-heading">
@@ -225,20 +257,6 @@
     </section>
 
 
-    
-    
-<section class="section" id="#DEMO">
-  <div class="">
-    
-  </div>
-  
-</section>
-
-
-
-
-
-    
 
     
     <section id="features">
