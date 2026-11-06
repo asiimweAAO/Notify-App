@@ -1,202 +1,551 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NOTIFY | How the Website Works</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-   
-  
 </head>
+
 <body>
+
   <header class="site-header">
-    <a class="brand" href="#top"><i class="bi bi-bell-fill"></i> NOTIFY</a>
+
+    <a class="brand" href="#top">NOTIFY</a>
+
     <nav class="site-nav" aria-label="Page navigation">
       <a href="#account">Account access</a>
       <a href="#homepage">Homepage guide</a>
       <a href="#process">Notification process</a>
- 
     </nav>
+
   </header>
 
+
   <section class="hero" id="top">
+
     <div class="eyebrow">Student updates made simple</div>
+
     <h1>How <span>NOTIFY</span> works from Moodle to your phone</h1>
-    <p>NOTIFY is intended to help students keep up with academic activity on Moodle. This guide explains how a student accesses the service, what the homepage sections are for, and how new Moodle information is expected to become a phone notification.</p>
+
+    <p>
+      NOTIFY is intended to help students keep up with academic activity on Moodle.
+      This guide explains how a student accesses the service, what the homepage
+      sections are for, and how new Moodle information is expected to become a
+      phone notification.
+    </p>
+
   </section>
 
+
   <main>
+
+    <!-- SECTION 1: ACCOUNT ACCESS -->
+
     <section class="section-block panel" id="account">
+
       <div class="section-heading">
+
         <span class="number">1</span>
+
         <div>
           <h2>Accessing a NOTIFY account</h2>
-          <p class="section-subtitle">Students use a NOTIFY account to manage the service and connect their Moodle account.</p>
+
+          <p class="section-subtitle">
+            Students use a NOTIFY account to manage the service and connect
+            their Moodle account.
+          </p>
         </div>
+
       </div>
-      <div class="row g-3">
-        <div class="col-md-6">
-          <article class="info-card">
-            <div class="icon"><i class="bi bi-box-arrow-in-right"></i></div>
-            <h3>For a student who already has an account</h3>
-            <p>The student opens the NOTIFY website and selects <strong>Log In</strong>. They enter the email address and password they used when registering for NOTIFY. After the details have been checked successfully, the student is taken to their account homepage, where they can view their notification settings and the Moodle account connected to their profile.</p>
-          </article>
-        </div>
-        <div class="col-md-6">
-          <article class="info-card">
-            <div class="icon"><i class="bi bi-person-plus"></i></div>
-            <h3>For a student who does not have an account</h3>
-            <p>The student selects <strong>Sign Up</strong> on the NOTIFY website and completes the registration details requested by the service, such as their name and email address. They create a password and complete any required email verification. Once registration is complete, they can use the new email address and password to log in to NOTIFY and continue with the Moodle connection process.</p>
-          </article>
-        </div>
+
+
+      <div class="info-grid">
+
+        <article class="info-card">
+
+          <div class="icon">LOGIN</div>
+
+          <h3>For a student who already has an account</h3>
+
+          <p>
+            The student opens the NOTIFY website and selects <strong>Log In</strong>.
+            They enter the email address and password they used when registering
+            for NOTIFY. After the details have been checked successfully, the
+            student is taken to their account homepage, where they can view
+            their notification settings and the Moodle account connected
+            to their profile.
+          </p>
+
+        </article>
+
+
+        <article class="info-card">
+
+          <div class="icon">SIGN UP</div>
+
+          <h3>For a student who does not have an account</h3>
+
+          <p>
+            The student selects <strong>Sign Up</strong> on the NOTIFY website
+            and completes the registration details requested by the service,
+            such as their name and email address. They create a password and
+            complete any required email verification. Once registration is
+            complete, they can use the new email address and password to log
+            in to NOTIFY and continue with the Moodle connection process.
+          </p>
+
+        </article>
+
       </div>
-      <p class="note mt-3 mb-0"><i class="bi bi-info-circle me-2"></i>A NOTIFY account is separate from a Moodle account. A real version should never ask students to share their Moodle password directly with an untrusted service; the Moodle connection should use an approved, secure authorization method.</p>
+
+
+      <p class="note">
+        <strong>Information:</strong>
+        A NOTIFY account is separate from a Moodle account. A real version
+        should never ask students to share their Moodle password directly
+        with an untrusted service; the Moodle connection should use an
+        approved, secure authorization method.
+      </p>
+
     </section>
+
+
+
+    <!-- SECTION 2: HOMEPAGE GUIDE -->
 
     <section class="section-block panel" id="homepage">
+
       <div class="section-heading">
+
         <span class="number">2</span>
+
         <div>
           <h2>What each part of the homepage does</h2>
-          <p class="section-subtitle">The homepage introduces NOTIFY and helps visitors understand and navigate the service.</p>
+
+          <p class="section-subtitle">
+            The homepage introduces NOTIFY and helps visitors understand
+            and navigate the service.
+          </p>
         </div>
+
       </div>
 
+
       <div class="homepage-item">
-        <div class="homepage-icon"><i class="bi bi-bell"></i></div>
+
+        <div class="homepage-icon">NAV</div>
+
         <div>
           <h3>Navigation bar</h3>
-          <p>The bell icon and NOTIFY name identify the website. The navigation links direct visitors to the main areas of the site, such as Features, Solutions, Pricing, Resources, and Security. The Log In button is for returning users</p>
+
+          <p>
+            The bell icon and NOTIFY name identify the website. The navigation
+            links direct visitors to the main areas of the site, such as
+            Features, Solutions, Pricing, Resources, and Security. The Log In
+            button is for returning users.
+          </p>
         </div>
+
       </div>
-      
+
+
       <div class="homepage-item">
-        <div class="homepage-icon"><i class="bi bi-bell-fill"></i></div>
+
+        <div class="homepage-icon">ALERT</div>
+
         <div>
           <h3>Notification dashboard preview</h3>
-          <p>This visual section gives visitors an example of the type of messages NOTIFY may display, such as a new lecture note, an assignment deadline, released marks, or a lecturer's announcement. It helps visitors picture how notifications could be organized. The sample messages are illustrations and are not live Moodle information.</p>
+
+          <p>
+            This visual section gives visitors an example of the type of
+            messages NOTIFY may display, such as a new lecture note, an
+            assignment deadline, released marks, or a lecturer's announcement.
+            It helps visitors picture how notifications could be organized.
+            The sample messages are illustrations and are not live Moodle
+            information.
+          </p>
         </div>
+
       </div>
+
+
       <div class="homepage-item">
-        <div class="homepage-icon"><i class="bi bi-grid"></i></div>
+
+        <div class="homepage-icon">FEATURES</div>
+
         <div>
           <h3>Features section</h3>
-          <p>The feature cards explain the main benefits the project aims to provide. These include bringing different course updates together, presenting information clearly, and helping students notice important changes without repeatedly checking Moodle themselves.</p>
+
+          <p>
+            The feature cards explain the main benefits the project aims
+            to provide. These include bringing different course updates
+            together, presenting information clearly, and helping students
+            notice important changes without repeatedly checking Moodle
+            themselves.
+          </p>
         </div>
+
       </div>
-     
+
+
       <div class="homepage-item">
-        <div class="homepage-icon"><i class="bi bi-info-circle"></i></div>
+
+        <div class="homepage-icon">ABOUT</div>
+
         <div>
           <h3>About the programme and current situation</h3>
-          <p>The About section explains why the project was proposed and the student problem it is intended to address. The Current Situation section tells visitors whether the system is still being planned or developed. It should be kept accurate so visitors do not mistake a proposed feature for one that is already working.</p>
+
+          <p>
+            The About section explains why the project was proposed and the
+            student problem it is intended to address. The Current Situation
+            section tells visitors whether the system is still being planned
+            or developed. It should be kept accurate so visitors do not mistake
+            a proposed feature for one that is already working.
+          </p>
         </div>
+
       </div>
-     
-            
+
     </section>
+
+
+
+    <!-- SECTION 3: NOTIFICATION PROCESS -->
 
     <section class="section-block panel" id="process">
+
       <div class="section-heading">
+
         <span class="number">3</span>
+
         <div>
           <h2>How NOTIFY gets information from Moodle</h2>
-          <p class="section-subtitle">The proposed process for turning a change in a Moodle course into a notification on a student's phone.</p>
+
+          <p class="section-subtitle">
+            The proposed process for turning a change in a Moodle course
+            into a notification on a student's phone.
+          </p>
         </div>
+
       </div>
 
-      <p class="copy">After the student has logged in to NOTIFY, they choose to connect their Moodle account. The connection must be set up using a method approved by the university or Moodle administrator. Depending on what the Moodle site allows, this could use an approved Moodle integration that lets NOTIFY receive update events, or a scheduled check that asks Moodle whether new items have appeared. The exact method must be agreed with the university; this webpage does not itself connect to Moodle.</p>
+
+      <p class="copy">
+        After the student has logged in to NOTIFY, they choose to connect
+        their Moodle account. The connection must be set up using a method
+        approved by the university or Moodle administrator. Depending on
+        what the Moodle site allows, this could use an approved Moodle
+        integration that lets NOTIFY receive update events, or a scheduled
+        check that asks Moodle whether new items have appeared. The exact
+        method must be agreed with the university; this webpage does not
+        itself connect to Moodle.
+      </p>
+
 
       <div class="flow" aria-label="Notification process overview">
-        <div class="flow-item"><i class="bi bi-mortarboard"></i><strong>1. Moodle changes</strong><small>A lecturer adds or changes course information.</small></div>
-        <div class="flow-item"><i class="bi bi-arrow-left-right"></i><strong>2. NOTIFY checks</strong><small>The approved connection reports or finds the change.</small></div>
-        <div class="flow-item"><i class="bi bi-funnel"></i><strong>3. New item identified</strong><small>NOTIFY checks whether it is new and relevant.</small></div>
-        <div class="flow-item"><i class="bi bi-bell"></i><strong>4. Alert prepared</strong><small>A clear message is created for the student.</small></div>
-        <div class="flow-item"><i class="bi bi-phone"></i><strong>5. Phone receives it</strong><small>A push notification is delivered to the device.</small></div>
+
+        <div class="flow-item">
+          <strong>1. Moodle changes</strong>
+          <small>A lecturer adds or changes course information.</small>
+        </div>
+
+        <div class="flow-item">
+          <strong>2. NOTIFY checks</strong>
+          <small>The approved connection reports or finds the change.</small>
+        </div>
+
+        <div class="flow-item">
+          <strong>3. New item identified</strong>
+          <small>NOTIFY checks whether it is new and relevant.</small>
+        </div>
+
+        <div class="flow-item">
+          <strong>4. Alert prepared</strong>
+          <small>A clear message is created for the student.</small>
+        </div>
+
+        <div class="flow-item">
+          <strong>5. Phone receives it</strong>
+          <small>A push notification is delivered to the device.</small>
+        </div>
+
       </div>
 
-      <div class="row g-3 mt-1">
-        <div class="col-md-6">
-          <article class="subsection">
-            <h3><i class="bi bi-search me-2"></i>How it gets new information</h3>
-            <p>NOTIFY checks the Moodle courses connected to the student's account. It looks for new or updated items such as lecturer announcements, uploaded lecture notes, assignment instructions, changes to coursework deadlines, and marks that have been released. It records what it has already checked and compares that information with the latest Moodle activity. This comparison helps the system identify a new change rather than treating every old item as a new notification.</p>
-          </article>
-        </div>
-        <div class="col-md-6">
-          <article class="subsection">
-            <h3><i class="bi bi-clock-history me-2"></i>When it sends a notification</h3>
-            <p>A notification is prepared when NOTIFY detects a new or relevant change in a course the student is enrolled in. For example, it may send an alert soon after a lecturer uploads notes or posts an announcement. It may also send a reminder when a configured coursework deadline is approaching. The timing depends on how frequently Moodle updates can be checked and on the notification rules selected for the service.</p>
-          </article>
-        </div>
-        <div class="col-md-6">
-          <article class="subsection">
-            <h3><i class="bi bi-question-circle me-2"></i>Why it sends a notification</h3>
-            <p>The purpose is to draw the student's attention to academic information that may need action. A student might otherwise miss a new assignment, fail to notice a change in a deadline, overlook a lecturer's announcement, or not realize that marks or learning materials are available. NOTIFY is intended to reduce the need for students to keep opening Moodle just to check whether something has changed.</p>
-          </article>
-        </div>
-        <div class="col-md-6">
-          <article class="subsection">
-            <h3><i class="bi bi-send me-2"></i>How it sends the notification</h3>
-            <p>After identifying a new item, NOTIFY prepares a short message containing details such as the course name, the type of update, and the time it was posted. The system then sends that message through a suitable push-notification service for the student's phone or browser. The student must have enabled notifications and granted the necessary permission. Tapping the alert should open NOTIFY or the relevant Moodle page so the student can read the full information.</p>
-          </article>
-        </div>
+
+
+      <div class="subsection-grid">
+
+        <article class="subsection">
+
+          <h3>How it gets new information</h3>
+
+          <p>
+            NOTIFY checks the Moodle courses connected to the student's account.
+            It looks for new or updated items such as lecturer announcements,
+            uploaded lecture notes, assignment instructions, changes to
+            coursework deadlines, and marks that have been released. It records
+            what it has already checked and compares that information with
+            the latest Moodle activity. This comparison helps the system
+            identify a new change rather than treating every old item as
+            a new notification.
+          </p>
+
+        </article>
+
+
+        <article class="subsection">
+
+          <h3>When it sends a notification</h3>
+
+          <p>
+            A notification is prepared when NOTIFY detects a new or relevant
+            change in a course the student is enrolled in. For example, it
+            may send an alert soon after a lecturer uploads notes or posts
+            an announcement. It may also send a reminder when a configured
+            coursework deadline is approaching. The timing depends on how
+            frequently Moodle updates can be checked and on the notification
+            rules selected for the service.
+          </p>
+
+        </article>
+
+
+        <article class="subsection">
+
+          <h3>Why it sends a notification</h3>
+
+          <p>
+            The purpose is to draw the student's attention to academic
+            information that may need action. A student might otherwise
+            miss a new assignment, fail to notice a change in a deadline,
+            overlook a lecturer's announcement, or not realize that marks
+            or learning materials are available. NOTIFY is intended to
+            reduce the need for students to keep opening Moodle just to
+            check whether something has changed.
+          </p>
+
+        </article>
+
+
+        <article class="subsection">
+
+          <h3>How it sends the notification</h3>
+
+          <p>
+            After identifying a new item, NOTIFY prepares a short message
+            containing details such as the course name, the type of update,
+            and the time it was posted. The system then sends that message
+            through a suitable push-notification service for the student's
+            phone or browser. The student must have enabled notifications
+            and granted the necessary permission. Tapping the alert should
+            open NOTIFY or the relevant Moodle page so the student can
+            read the full information.
+          </p>
+
+        </article>
+
       </div>
 
-      <h3 class="mt-4">Examples of notifications a student may receive</h3>
-      <p class="copy">The examples below illustrate how messages could appear in a phone notification panel. They are sample messages, not live notifications.</p>
+
+
+      <h3 class="section-subheading">
+        Examples of notifications a student may receive
+      </h3>
+
+      <p class="copy">
+        The examples below illustrate how messages could appear in a phone
+        notification panel. They are sample messages, not live notifications.
+      </p>
+
+
       <div class="example-phone">
+
         <div class="phone-heading">
-          <strong><i class="bi bi-bell-fill me-2" style="color:var(--teal)"></i>Phone notification panel</strong>
+
+          <strong>Phone notification panel</strong>
+
           <small>Example alerts</small>
+
         </div>
+
+
         <article class="phone-alert">
-          <i class="bi bi-journal-text"></i>
-          <div><strong>NOTIFY · New lecture notes uploaded</strong><p>Business Computing: your lecturer has uploaded new learning material.</p><small>Tap to view the course on Moodle</small></div>
+
+          <div class="phone-alert-icon">NOTES</div>
+
+          <div>
+            <strong>NOTIFY · New lecture notes uploaded</strong>
+
+            <p>
+              Business Computing: your lecturer has uploaded new
+              learning material.
+            </p>
+
+            <small>Tap to view the course on Moodle</small>
+          </div>
+
         </article>
+
+
         <article class="phone-alert">
-          <i class="bi bi-calendar-event"></i>
-          <div><strong>NOTIFY · Coursework deadline reminder</strong><p>Human Resource Management: a coursework deadline is approaching.</p><small>Tap to view the coursework details</small></div>
+
+          <div class="phone-alert-icon">DEADLINE</div>
+
+          <div>
+            <strong>NOTIFY · Coursework deadline reminder</strong>
+
+            <p>
+              Human Resource Management: a coursework deadline
+              is approaching.
+            </p>
+
+            <small>Tap to view the coursework details</small>
+          </div>
+
         </article>
+
+
         <article class="phone-alert">
-          <i class="bi bi-megaphone"></i>
-          <div><strong>NOTIFY · New lecturer announcement</strong><p>A new announcement has been posted in one of your Moodle courses.</p><small>Tap to read the announcement</small></div>
+
+          <div class="phone-alert-icon">NOTICE</div>
+
+          <div>
+            <strong>NOTIFY · New lecturer announcement</strong>
+
+            <p>
+              A new announcement has been posted in one of
+              your Moodle courses.
+            </p>
+
+            <small>Tap to read the announcement</small>
+          </div>
+
         </article>
+
+
         <article class="phone-alert">
-          <i class="bi bi-clipboard-check"></i>
-          <div><strong>NOTIFY · Marks are available</strong><p>New coursework marks have been released for one of your courses.</p><small>Tap to check Moodle</small></div>
+
+          <div class="phone-alert-icon">MARKS</div>
+
+          <div>
+            <strong>NOTIFY · Marks are available</strong>
+
+            <p>
+              New coursework marks have been released for one
+              of your courses.
+            </p>
+
+            <small>Tap to check Moodle</small>
+          </div>
+
         </article>
+
       </div>
+
     </section>
+
+
+
+    <!-- SECTION 4: SECURITY -->
 
     <section class="section-block panel" id="privacy">
+
       <div class="section-heading">
+
         <span class="number">4</span>
+
         <div>
           <h2>Security, permissions, and student control</h2>
-          <p class="section-subtitle">The system will need to protect student accounts and respect notification choices.</p>
+
+          <p class="section-subtitle">
+            The system will need to protect student accounts and respect
+            notification choices.
+          </p>
         </div>
+
       </div>
-      <p class="copy">Before a real NOTIFY service can read Moodle course activity, the university or Moodle administrator must approve the connection and the information the service is allowed to access. NOTIFY should request only the access needed to identify updates for the student. Authentication information should be handled securely, and students should be able to disconnect their Moodle account or change their notification preferences.</p>
-      <p class="copy">The student must also grant permission for phone or browser notifications. If notifications are blocked, the student may still be able to view updates inside the NOTIFY website, but the phone may not display push alerts. The system should avoid sending duplicate alerts and should not show private course information to people who are not authorized to see it.</p>
-      <p class="note mb-0"><strong>Project status:</strong> This page explains the proposed workflow. The Moodle connection, automatic update checking, and real phone notifications will only work after the required university approval, integration, server-side programming, and notification-service setup have been completed.</p>
+
+
+      <p class="copy">
+        Before a real NOTIFY service can read Moodle course activity, the
+        university or Moodle administrator must approve the connection
+        and the information the service is allowed to access. NOTIFY should
+        request only the access needed to identify updates for the student.
+        Authentication information should be handled securely, and students
+        should be able to disconnect their Moodle account or change their
+        notification preferences.
+      </p>
+
+
+      <p class="copy">
+        The student must also grant permission for phone or browser
+        notifications. If notifications are blocked, the student may
+        still be able to view updates inside the NOTIFY website, but
+        the phone may not display push alerts. The system should avoid
+        sending duplicate alerts and should not show private course
+        information to people who are not authorized to see it.
+      </p>
+
+
+      <p class="note">
+        <strong>Project status:</strong>
+        This page explains the proposed workflow. The Moodle connection,
+        automatic update checking, and real phone notifications will only
+        work after the required university approval, integration,
+        server-side programming, and notification-service setup have
+        been completed.
+      </p>
+
     </section>
+
+
+
+    <!-- SECTION 5: LOGGING OUT -->
 
     <section class="section-block panel">
+
       <div class="section-heading">
+
         <span class="number">5</span>
+
         <div>
           <h2>Finishing a NOTIFY session</h2>
-          <p class="section-subtitle">The student can safely leave the service after checking their updates.</p>
+
+          <p class="section-subtitle">
+            The student can safely leave the service after checking
+            their updates.
+          </p>
         </div>
+
       </div>
-      <p class="copy">When the student has finished reviewing the notifications, they can return to the NOTIFY account menu and select <strong>Log Out</strong>. This ends the signed-in session on that device. Whether notifications continue to arrive after logout depends on the final system design and the student's notification settings. For example, a properly configured service may continue sending permitted background alerts without leaving the student signed in on the website. The logout process should therefore end account access while respecting the notification preferences the student has chosen.</p>
+
+
+      <p class="copy">
+        When the student has finished reviewing the notifications,
+        they can return to the NOTIFY account menu and select
+        <strong>Log Out</strong>. This ends the signed-in session on
+        that device. Whether notifications continue to arrive after
+        logout depends on the final system design and the student's
+        notification settings. For example, a properly configured
+        service may continue sending permitted background alerts
+        without leaving the student signed in on the website. The
+        logout process should therefore end account access while
+        respecting the notification preferences the student has chosen.
+      </p>
+
     </section>
+
   </main>
 
+
   <footer>
-    <i class="bi bi-bell-fill me-2" style="color:var(--teal)"></i>
-    <strong style="color:#e8edf6">NOTIFY</strong> · Student updates made simple · Proposed system explanation
+
+    <strong>NOTIFY</strong>
+    · Student updates made simple
+    · Proposed system explanation
+
   </footer>
+
 </body>
 </html>
