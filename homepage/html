@@ -188,13 +188,14 @@
     
     <section class="section" id="DEMO">
 <div class="">
-    <div class="d-flex justify-content-between align-items-center mb-4">
+  ##dashboard header
      <div class="d-flex align-items-center small">
         <span class="status-dot me-2"></span>
         <span class="text-success fw-medium">Notify & Motivate</span>
      </div>
-    </div>
     
+    ##critical card
+  
   </div>
   
    </section>
