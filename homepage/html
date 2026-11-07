@@ -222,8 +222,22 @@
       </div>
     </div>
   </div>
-
-
+##warning card 
+  <div class="card custom-card border-warning mb-3">
+    <div class="card-body">
+      <div class="d-flex justify-content-between align-items-start mb-2">
+        <span class="badge-label text-warning-custom">WARNING</span>
+        <span class="status-pending small"> Overdue Work </span>
+      </div>
+      <h6 class="card-title fw-bold mb-1 text-white"> The assignment is almost due </h6>
+      <p class="card-text text-muted small mb-3"> 25 min left </p>
+      <div class="d-flex gap-2">
+        <span class="badge tag-pill">Please Submit</span>
+        <span class="badge tag-pill">COURSE </span>
+      </div>
+    </div>
+  </div>
+  
 </div>
    </section>
 
