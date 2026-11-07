@@ -231,13 +231,17 @@
   </div>
 
   <div class="d-flex justify-content-between align-items-center mb-4">
-  <div>
+  <div class="d-flex align-items-center small">
     <h4>New Assignments</h4>
       <p class="stat">2</p>
   </div>
-    <div>
+    <div class="d-flex align-items-center small">
       <h4> Feedback </h4>
       <p class="stat"> 3 </p>
+    </div>
+    <div class="d-flex align-items-center small" >
+      <h4> Overdue Work </h4>
+      <p class="stat">2</p>
     </div>
   </div>
   
