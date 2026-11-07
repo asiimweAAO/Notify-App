@@ -208,8 +208,23 @@
       </div>
     </div>
   </div>
+ ##infor card
+  <div class="card custom-card border-info mb-3">
+    <div class="card-body">
+      <div class="d-flex justify-content-between align-items-start mb-2">
+        <span class="badge-label text-blue">INFO</span>
+        <span class="status-delivered small">Feedback </span>
+      </div>
+      <h6 class="card-title fw-bold mb-1 text-white">You have received feedback on your submission</h6>
+      <p class="card-text text-muted small mb-3"> 12 min ago</p>
+      <div class="d-flex gap-2">
+        <span class="badge tag-pill">COURSE </span>
+      </div>
+    </div>
   </div>
-  
+
+
+</div>
    </section>
 
 
