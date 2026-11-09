@@ -31,8 +31,8 @@
         <li><a class="site-link" href="#features">Features</a></li>
         <li><a class="site-link" href="#solutions">Solutions</a></li>
         <li><a class="site-link" href="#how it works">See How It works</a></li>
-        <li><a class="site-link" href="#security">Security</a></li>
-        <li><a class="site-link" href="#DEMO">DEMO</a></li>
+        <li><a class="site-link" href="#demo">demo</a></li>
+      
       </ul>
     </nav>
 
@@ -183,7 +183,7 @@
   <!--dashboard header-->
      <div class="d-flex align-items-center small">
         <span class="status-dot me-2"></span>
-        <span class="text-success fw-medium">Notify & Motivate</span>
+        <span id="Demo" class="text-success fw-medium">Notify & Motivate</span>
      </div>
     
     <!--critical card-->
