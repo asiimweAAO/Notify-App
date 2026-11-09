@@ -538,7 +538,7 @@
           </div>
 
           <div class="current-note">
-            <span style="color: yellow;">NOTIFY is currently a project concept. The team is still exploring
+            <span>NOTIFY is currently a project concept. The team is still exploring
             the best logic and technical approach to make the programme work
             as expected. Dashboard items and alert examples on this page are
             illustrative, not live Moodle notifications.</span>
