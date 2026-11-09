@@ -183,7 +183,7 @@
   <!--dashboard header-->
      <div class="d-flex align-items-center small">
         <span class="status-dot me-2"></span>
-        <span id="Demo" class="text-success fw-medium">Notify & Motivate</span>
+        <span id="Demo" class="text-success fw-medium">Demo: Notify & Motivate</span>
      </div>
     
     <!--critical card-->
