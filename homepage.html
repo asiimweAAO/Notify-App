@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOTIFY | Student Updates</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+
+  <!-- ============ RESPONSIVE NAVBAR ============ -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark site-navbar">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#" aria-label="Notify home">NOTIFY</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#solutions">Solutions</a></li>
+            <li class="nav-item"><a class="nav-link" href="#how-it-works">See How It Works</a></li>
+            <li class="nav-item"><a class="nav-link" href="#security">Security</a></li>
+            <!-- NEW: Team link -->
+            <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="Login.html">Log In</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero-gradient text-white py-5">
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
+
+          <div class="col-lg-6">
+            <p class="text-uppercase fw-semibold small mb-2 text-white-50">Student updates made simple</p>
+
+            <h1 class="display-5 fw-bold mb-3">
+              Real-time notifications <span class="text-warning">for students</span>
+            </h1>
+
+            <p class="lead mb-4">
+              Stay informed when new coursework, announcements, marks, and learning
+              materials are uploaded to Moodle. NOTIFY brings important updates
+              straight to your phone, so you never miss what matters.
+            </p>
+
+            <div class="row g-3 mt-2">
+              <div class="col-12 col-sm-4">
+                <div class="bg-white bg-opacity-10 rounded p-3 h-100">
+                  <strong class="d-block">Instant alerts</strong>
+                  <small class="text-white-50">New course updates</small>
+                </div>
+              </div>
+              <div class="col-12 col-sm-4">
+                <div class="bg-white bg-opacity-10 rounded p-3 h-100">
+                  <strong class="d-block">One dashboard</strong>
+                  <small class="text-white-50">Updates in one place</small>
+                </div>
+              </div>
+              <div class="col-12 col-sm-4">
+                <div class="bg-white bg-opacity-10 rounded p-3 h-100">
+                  <strong class="d-block">Student-first</strong>
+                  <small class="text-white-50">Designed for learning</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card shadow-lg border-0 rounded-4 dashboard-card mx-auto" aria-label="Illustrative student notifications dashboard">
+              <div class="card-body p-4">
+
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="fw-semibold">Notifications Dashboard</span>
+                  <span class="badge text-bg-success">Live preview</span>
+                </div>
+
+                <div class="d-flex align-items-start gap-3 border-bottom pb-3 mb-3">
+                  <span class="badge text-bg-danger">Important</span>
+                  <div class="flex-grow-1">
+                    <strong class="d-block">Coursework deadline reminder</strong>
+                    <small class="text-muted">Human Resource Management · Just now</small>
+                  </div>
+                  <span class="badge text-bg-secondary">Sent</span>
+                </div>
+
+                <div class="d-flex align-items-start gap-3 border-bottom pb-3 mb-3">
+                  <span class="badge text-bg-primary">New</span>
+                  <div class="flex-grow-1">
+                    <strong class="d-block">New lecture notes uploaded</strong>
+                    <small class="text-muted">Business Computing · 5 min ago</small>
+                  </div>
+                  <span class="badge text-bg-secondary">Delivered</span>
+                </div>
+
+                <div class="d-flex align-items-start gap-3 border-bottom pb-3 mb-3">
+                  <span class="badge text-bg-info">Update</span>
+                  <div class="flex-grow-1">
+                    <strong class="d-block">Coursework marks are available</strong>
+                    <small class="text-muted">Semester 1 · 18 min ago</small>
+                  </div>
+                  <span class="badge text-bg-secondary">Delivered</span>
+                </div>
+
+                <div class="d-flex align-items-start gap-3 mb-3">
+                  <span class="badge text-bg-warning">Notice</span>
+                  <div class="flex-grow-1">
+                    <strong class="d-block">Lecturer posted a new announcement</strong>
+                    <small class="text-muted">Moodle · 32 min ago</small>
+                  </div>
+                  <span class="badge text-bg-secondary">Delivered</span>
+                </div>
+
+                <div class="mt-3">
+                  <small class="text-muted d-block mb-2">Student updates received (illustrative)</small>
+                  <div class="d-flex gap-1" aria-hidden="true">
+                    <span class="stat-dot bg-primary"></span>
+                    <span class="stat-dot bg-primary"></span>
+                    <span class="stat-dot bg-primary"></span>
+                    <span class="stat-dot bg-primary"></span>
+                    <span class="stat-dot bg-primary"></span>
+                    <span class="stat-dot bg-secondary bg-opacity-25"></span>
+                    <span class="stat-dot bg-secondary bg-opacity-25"></span>
+                    <span class="stat-dot bg-secondary bg-opacity-25"></span>
+                    <span class="stat-dot bg-secondary bg-opacity-25"></span>
+                    <span class="stat-dot bg-secondary bg-opacity-25"></span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ BUILT WITH STUDENTS IN MIND strip ============ -->
+    <div class="student-strip py-3 text-center">
+      <div class="container">
+        <div class="text-uppercase fw-semibold small text-muted">Built with students in mind</div>
+      </div>
+    </div>
+
+    <div class="student-strip py-3">
+      <div class="container d-flex flex-wrap justify-content-center gap-4 text-muted small">
+        <span class="fw-semibold">Students</span>
+        <span class="fw-semibold">Moodle Courses</span>
+        <span class="fw-semibold">Mobile Alerts</span>
+        <span class="fw-semibold">NOTIFY</span>
+      </div>
+    </div>
+
+
+    <!-- ============ DEMO CARDS ============ -->
+    <section id="DEMO" class="py-5">
+      <div class="container">
+
+        <div class="text-center mb-4">
+          <span class="badge text-bg-primary me-2">&nbsp;</span>
+          <span class="fw-semibold">Notify &amp; Motivate</span>
+        </div>
+
+        <div class="row g-4">
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-danger border-start border-4">
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="badge text-bg-danger">CRITICAL</span>
+                  <span class="badge text-bg-light text-dark border">New Assignment</span>
+                </div>
+                <h6 class="card-title">You have received feedback on your submission</h6>
+                <p class="card-text text-muted small mb-3">16 min ago</p>
+                <span class="badge text-bg-secondary">COURSE</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-info border-start border-4">
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="badge text-bg-info">INFO</span>
+                  <span class="badge text-bg-light text-dark border">Feedback</span>
+                </div>
+                <h6 class="card-title">You have received feedback on your submission</h6>
+                <p class="card-text text-muted small mb-3">12 min ago</p>
+                <span class="badge text-bg-secondary">COURSE</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-warning border-start border-4">
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="badge text-bg-warning">WARNING</span>
+                  <span class="badge text-bg-light text-dark border">Overdue Work</span>
+                </div>
+                <h6 class="card-title">The assignment is almost due</h6>
+                <p class="card-text text-muted small mb-3">25 min left</p>
+                <span class="badge text-bg-dark me-1">Please Submit</span>
+                <span class="badge text-bg-secondary">COURSE</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- counts -->
+        <div class="row g-4 mt-1">
+          <div class="col-12 col-md-4">
+            <div class="card text-center shadow-sm">
+              <div class="card-body">
+                <h4 class="fw-bold mb-1">2</h4>
+                <p class="text-muted mb-0 small">New Assignments</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card text-center shadow-sm">
+              <div class="card-body">
+                <h4 class="fw-bold mb-1">3</h4>
+                <p class="text-muted mb-0 small">Feedback</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card text-center shadow-sm">
+              <div class="card-body">
+                <h4 class="fw-bold mb-1">2</h4>
+                <p class="text-muted mb-0 small">Overdue Work</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============ FEATURES (3 cards) ============ -->
+    <section id="features" class="py-5">
+      <div class="container">
+
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Important updates, delivered clearly</h2>
+          <p class="text-muted mx-auto" style="max-width: 640px;">
+            NOTIFY is designed to help students notice new learning information
+            without having to constantly check their Moodle accounts.
+          </p>
+        </div>
+
+        <div class="row g-4">
+
+          <div class="col-12 col-md-4">
+            <article class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 card-title">Multi-channel notifications</h3>
+                <p class="card-text text-muted">
+                  Receive alerts about new course materials, announcements,
+                  and coursework updates on your phone.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-4" id="security">
+            <article class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 card-title">Account-conscious design</h3>
+                <p class="card-text text-muted">
+                  Student account access and privacy are important considerations
+                  as the project's technical approach is developed.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <article class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 card-title">Stay up to date</h3>
+                <p class="card-text text-muted">
+                  See examples of new notes, marks, deadlines, and lecturer
+                  announcements in one clear notification view.
+                </p>
+              </div>
+            </article>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============ FEATURES LIST (8 cards) ============ -->
+    <section id="features-list" class="py-5">
+      <div class="container">
+
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Our Features</h2>
+          <p class="text-muted mx-auto" style="max-width: 640px;">
+            Notify helps students stay updated
+            about assignments and important announcements.
+          </p>
+        </div>
+
+        <div class="row g-4">
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h6 card-title">Student Login</h3>
+                <p class="card-text small text-muted mb-0">
+                  Students can create accounts and log in
+                  to access their notifications.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h6 card-title">Notification Dashboard</h3>
+                <p class="card-text small text-muted mb-0">
+                  Students can view all their notifications
+                  in one place.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h6 card-title">New Assignment Alerts</h3>
+                <p class="card-text small text-muted mb-0">
+                  Students receive alerts whenever
+                  new assignments are posted.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h6 card-title">Deadline Reminders</h3>
+                <p class="card-text small text-muted mb-0">
+                  Notify reminds students about
+                  upcoming assignment deadlines.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h6 card-title">Read and Unread Notifications</h3>
+                <p class="card-text small text-muted mb-0">
+                  Students can identify notifications
+                  they have read and those they have not read.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h6 card-title">Assignment Status Tracking</h3>
+                <p class="card-text small text-muted mb-0">
+                  Students can check the status
+                  of their assignments.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h6 card-title">Course-Based Notifications</h3>
+                <p class="card-text small text-muted mb-0">
+                  Students receive announcements
+                  related to their courses.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h6 card-title">Moodle Assignment Links</h3>
+                <p class="card-text small text-muted mb-0">
+                  Students can click links to open
+                  their assignments directly on Moodle.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section id="how-it-works" class="py-5">
+      <div class="container">
+
+        <div class="text-center mb-5">
+          <h1 class="fw-bold">How <span class="text-primary">NOTIFY</span> works from Moodle to your phone</h1>
+          <p class="text-muted mx-auto" style="max-width: 760px;">
+            NOTIFY is intended to help students keep up with academic activity on Moodle.
+            This guide explains how a student accesses the service, what the homepage
+            sections are for, and how new Moodle information is expected to become a
+            phone notification.
+          </p>
+        </div>
+
+        <div class="mb-5" id="account-access">
+          <h2 class="h3 fw-semibold mb-2">Accessing a NOTIFY account</h2>
+          <p class="text-muted">
+            Students use a NOTIFY account to manage the service and connect
+            their Moodle account.
+          </p>
+
+          <article class="row g-4">
+            <div class="col-12 col-md-6">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <span class="badge text-bg-primary mb-2">LOGIN</span>
+                  <h3 class="h5 card-title">For a student who already has an account</h3>
+                  <p class="card-text text-muted">
+                    The student opens the NOTIFY website and selects <strong>Log In</strong>.
+                    They enter the email address and password they used when registering
+                    for NOTIFY. After the details have been checked successfully, the
+                    student is taken to their account homepage, where they can view
+                    their notification settings and the Moodle account connected
+                    to their profile.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <span class="badge text-bg-success mb-2">SIGN UP</span>
+                  <h3 class="h5 card-title">For a student who does not have an account</h3>
+                  <p class="card-text text-muted">
+                    The student selects <strong>Sign Up</strong> on the NOTIFY website
+                    and completes the registration details requested by the service,
+                    such as their name and email address. They create a password and
+                    complete any required email verification. Once registration is
+                    complete, they can use the new email address and password to log
+                    in to NOTIFY and continue with the Moodle connection process.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <div class="alert alert-info mt-4 mb-0">
+            <strong>Information:</strong>
+            A NOTIFY account is separate from a Moodle account. A real version
+            should never ask students to share their Moodle password directly
+            with an untrusted service; the Moodle connection should use an
+            approved, secure authorization method.
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <h2 class="h3 fw-semibold mb-2">How the programme will work</h2>
+          <p class="text-muted mb-0">
+            A simple proposed flow for notifying students about Moodle activity.
+          </p>
+        </div>
+
+        <div class="row g-4">
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm text-center">
+              <div class="card-body">
+                <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-3" style="width:48px;height:48px;">1</div>
+                <h3 class="h6 card-title">Create a NOTIFY account</h3>
+                <p class="card-text small text-muted mb-0">Students sign up or log in to their NOTIFY account.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm text-center">
+              <div class="card-body">
+                <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-3" style="width:48px;height:48px;">2</div>
+                <h3 class="h6 card-title">Connect Moodle</h3>
+                <p class="card-text small text-muted mb-0">
+                  Students provide the appropriate access through a secure
+                  method that the project will define.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm text-center">
+              <div class="card-body">
+                <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-3" style="width:48px;height:48px;">3</div>
+                <h3 class="h6 card-title">Check course activity</h3>
+                <p class="card-text small text-muted mb-0">
+                  NOTIFY detects whether new content or unread updates are available.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm text-center">
+              <div class="card-body">
+                <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-3" style="width:48px;height:48px;">4</div>
+                <h3 class="h6 card-title">Send a phone alert</h3>
+                <p class="card-text small text-muted mb-0">
+                  New information is surfaced in the student's phone notification panel.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============ ABOUT + SOLUTIONS ============ -->
+    <section id="about" class="py-5">
+      <div class="container">
+
+        <div class="row g-5">
+
+          <div class="col-12 col-lg-6">
+            <h2 class="fw-bold mb-3">About the programme</h2>
+            <p class="text-muted">
+              This programme was created to help describe new information uploaded
+              on the UCU Moodle website. Students can miss coursework marks or
+              important academic updates when they do not notice newly uploaded
+              materials. NOTIFY is an idea for bringing updates from Moodle to
+              students' notification panels, making important course information
+              easier to notice among everyday social media notifications.
+            </p>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <h2 class="fw-bold mb-3">Current situation</h2>
+            <p class="text-muted">
+              UCU students currently rely on manually checking Moodle to find new
+              assignments and deadlines, which makes it easy to miss important updates.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Solutions block -->
+        <section id="solutions" class="mt-5">
+
+          <div class="text-center bg-dark text-white rounded-4 p-5 mb-5">
+            <h1 class="display-6 fw-bold mb-2">UCU NOTIFY</h1>
+            <p class="lead mb-0 text-white-50">Never Miss an Assignment Again</p>
+          </div>
+
+          <div class="mb-4">
+            <h2 class="h3 fw-semibold mb-2">Our Proposed Solutions</h2>
+            <p class="text-muted mb-0">
+              UCU Notify is a proposed notification system
+              designed to help students stay informed about
+              newly uploaded assignments and upcoming deadlines.
+              It works alongside Moodle to improve communication
+              between lecturers and students.
+            </p>
+          </div>
+
+          <h2 class="h3 fw-semibold mb-4">How We Solve the Problem</h2>
+
+          <div class="row g-4">
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="h6 card-title">1. Instant Assignment Notifications</h3>
+                  <p class="card-text small text-muted mb-0">
+                    Students receive notifications whenever a new
+                    assignment is uploaded by their lecturers.
+                    This helps students know about new coursework
+                    without constantly checking Moodle.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="h6 card-title">2. Automatic Deadline Reminders</h3>
+                  <p class="card-text small text-muted mb-0">
+                    The system reminds students about upcoming
+                    assignment deadlines. Reminders can be sent
+                    24 hours and 1 hour before submission time
+                    to reduce late submissions.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="h6 card-title">3. Centralized Assignment Dashboard</h3>
+                  <p class="card-text small text-muted mb-0">
+                    All assignments are displayed in one place.
+                    Students can view assignment titles, courses,
+                    submission dates and their completion status
+                    without searching through different Moodle pages.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="h6 card-title">4. Course-Based Notifications</h3>
+                  <p class="card-text small text-muted mb-0">
+                    Students receive relevant assignment updates
+                    according to the courses they are enrolled in.
+                    This reduces unnecessary notifications and
+                    keeps information organized.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="h6 card-title">5. Assignment Tracking</h3>
+                  <p class="card-text small text-muted mb-0">
+                    Students can mark assignments as completed
+                    and identify pending or overdue work.
+                    This helps them organize their academic tasks
+                    and manage their time better.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="h6 card-title">6. Mobile-Friendly Access</h3>
+                  <p class="card-text small text-muted mb-0">
+                    The application is designed to work on smartphones
+                    and computers, allowing students to access
+                    assignment information wherever they are.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <h2 class="h3 fw-semibold mt-5 mb-3">Expected Benefits</h2>
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Reduced chances of missing assignments.</li>
+                <li class="list-group-item">Improved student time management.</li>
+                <li class="list-group-item">Fewer late assignment submissions.</li>
+                <li class="list-group-item">Better communication between lecturers and students.</li>
+                <li class="list-group-item">Easier access to academic updates.</li>
+                <li class="list-group-item">Improved awareness of coursework deadlines.</li>
+              </ul>
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+    </section>
+
+
+    <!-- ============ TEAM SECTION ============ -->
+    <section id="team" class="py-5 bg-light">
+      <div class="container">
+
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Our Team</h2>
+          <p class="text-muted mx-auto" style="max-width: 640px;">
+            The people behind NOTIFY — committed to making student updates easier to follow.
+          </p>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- Team Member 1 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 text-center">
+              <img src="images/team1.jpg" 
+                   class="card-img-top rounded-circle mx-auto mt-4" 
+                   style="width:120px;height:120px;object-fit:cover;" 
+                   alt="Team Member 1">
+              <div class="card-body">
+                <h5 class="card-title mb-1">Ashannah Darlene</h5>
+                <p class="text-muted small mb-2">Project Manager</p>
+                <p class="card-text small">I am a motivated Computer Science student passionate about learning, technology and personal growth. I am hardworking, adaptable, and always willing to learn new skills and take on challenges. I also speak English, French and German (B1).</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 2 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 text-center">
+              <img src="Asiimwe A.jpeg" 
+                   class="card-img-top rounded-circle mx-auto mt-4" 
+                   style="width:120px;height:120px;object-fit:cover;" 
+                   alt="Team Member 2">
+              <div class="card-body">
+                <h5 class="card-title mb-1">Asiimwe Atuhumuza Olusegun</h5>
+                <p class="text-muted small mb-2">Team leader</p>
+                <p class="card-text small">Computer Science student focused on developing strong technical, analytical, and problem-solving skills. Currently building a foundation in programming, computing, and emerging technologies while exploring opportunities across the technology sector.
+Committed to continuous learning, practical experience, and applying technology to solve real-world problems.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 3 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 text-center">
+              <img src="Bradley.jpeg" 
+                   class="card-img-top rounded-circle mx-auto mt-4" 
+                   style="width:120px;height:120px;object-fit:cover;" 
+                   alt="Team Member 3">
+              <div class="card-body">
+                <h5 class="card-title mb-1">Munialo Bradley David</h5>
+                <p class="text-muted small mb-2">Team Member</p>
+                <p class="card-text small">Data Scientist & Analytics Specialist
+Turning messy data into clear decisions. Skilled in Python, SQL, Power BI & Machine Learning. Passionate about using data to solve real problems in Africa</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 4 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 text-center">
+              <img src="Elizabeth Peace.jpeg" 
+                   class="card-img-top rounded-circle mx-auto mt-4" 
+                   style="width:120px;height:120px;object-fit:cover;" 
+                   alt="Team Member 4">
+              <div class="card-body">
+                <h5 class="card-title mb-1">Mwogeza Elizabeth Peace</h5>
+                <p class="text-muted small mb-2">Team Member</p>
+                <p class="card-text small">I am an ambitious and passionate Computer Science student driven by a deep interest in technology, innovation, and cybersecurity. I am determined to explore the endless possibilities of technology, develop my technical expertise, and master the art of securing digital systems. My goal is to become a skilled cybersecurity professional who not only protects data and digital infrastructure but also contributes to building a safer, smarter, and more secure digital future.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 5 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 text-center">
+              <img src="Sean.jpeg" 
+                   class="card-img-top rounded-circle mx-auto mt-4" 
+                   style="width:120px;height:120px;object-fit:cover;" 
+                   alt="Team Member 5">
+              <div class="card-body">
+                <h5 class="card-title mb-1">Sserubiri Sean Nelson</h5>
+                <p class="text-muted small mb-2">Team Member</p>
+                <p class="card-text small">My name is Sean Nelson Sserubiri and I am a motivated, curious, and technology-driven individual with a strong interest in Information Technology, computer systems, programming, and personal development. I have a passion for learning new skills, exploring innovative technologies, and finding practical solutions to challenges. I am particularly interested in computer networking, cybersecurity, cloud computing, virtualization, and software development. I consider myself adaptable, hardworking, and eager to grow both personally and professionally. </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 6 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 text-center">
