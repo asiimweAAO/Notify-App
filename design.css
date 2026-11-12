@@ -1,67 +1,10 @@
-
-/* NAVIGATION LINKS */
-.site-navbar .navbar-nav .nav-link {
-    position: relative;
-    display: inline-block;
-    padding: 10px 16px !important;
-    margin: 0 3px;
-    border-radius: 10px;
-
-    color: #f1f5f9;
-    background-color: transparent;
-
-    transition:
-        background-color 0.35s ease,
-        color 0.35s ease,
-        transform 0.35s ease,
-        box-shadow 0.35s ease;
-}
-
-/* SMOOTH HOVER EFFECT */
-.site-navbar .navbar-nav .nav-link:hover {
-    color: #10243b;
-    background-color: #dff4ff;
-
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 4px 14px rgba(173, 226, 255, 0.18);
-}
-
-/* REMOVE BOOTSTRAP ACTIVE COLOUR */
-.site-navbar .navbar-nav .nav-link.active {
-    color: #f1f5f9;
-    background-color: transparent;
-    box-shadow: none;
-}
-
-/* CLICK FEEDBACK */
-.site-navbar .navbar-nav .nav-link:active {
-    transform: scale(0.96);
-}
-
-/* KEYBOARD ACCESSIBILITY */
-.site-navbar .navbar-nav .nav-link:focus-visible {
-    outline: 2px solid #dff4ff;
-    outline-offset: 3px;
-}
-
-/* MOBILE NAVIGATION */
-@media (max-width: 991px) {
-    .site-navbar .navbar-nav .nav-link {
-        display: block;
-        margin: 3px 0;
-    }
-}
-
-
 :root {
   --page-blue: #071b3a;
-  --page-blue-deep: #06152d;
+  --page-blue-deep: #375b97;
   --navbar-blue: #041329;
   --card-surface: #f8fbff;
   --card-text: #17243a;
-  --muted-text: #53647c;
+  --muted-text: #7d7d8f;
   --accent-blue: #3b82f6;
 }
 
@@ -200,11 +143,3 @@ button:focus-visible {
     padding: 0.65rem 0;
   }
 }
-
-/* ---- Fixes added for deployment ---- */
-/* Muted text was too dark on the dark-blue page background */
-.text-muted { color: #b9c8e0 !important; }
-
-/* Team section is light (bg-light), so it needs dark text */
-#team h2 { color: var(--card-text); }
-#team .text-muted { color: var(--muted-text) !important; }
