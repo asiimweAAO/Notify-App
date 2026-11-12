@@ -1,0 +1,34 @@
+/* Portal-only styles. Load AFTER design.css so these rules win.
+   Colours reuse the variables defined in design.css. */
+
+/* design.css turns every .alert into a plain light box,
+   so we give success and error alerts their colours back */
+.alert-success { background-color: #e3f6ea; color: #14532d; border-color: #b6e2c5; }
+.alert-danger  { background-color: #fde8e8; color: #7f1d1d; border-color: #f5b5b5; }
+
+/* design.css makes page text light; modals and toasts are white boxes */
+.modal-content,
+.toast { color: var(--card-text); }
+
+/* Notification cards on the student dashboard */
+.notif-card {
+  border-left: 5px solid var(--accent-blue);
+  cursor: pointer;
+  transition: transform 0.12s ease;
+}
+.notif-card:hover,
+.notif-card:focus-visible { transform: translateY(-2px); }
+.notif-card.priority-high   { border-left-color: #dc3545; }
+.notif-card.priority-medium { border-left-color: #fbbf24; }
+.notif-card.priority-low    { border-left-color: var(--accent-blue); }
+
+/* Pulsing badge while syncing */
+.is-syncing { animation: pulse 0.8s infinite; }
+@keyframes pulse { 50% { opacity: 0.4; } }
+
+/* Flash effect used when a notification banner is clicked (student-dashboard.js) */
+.flash { animation: flash 2.5s ease; }
+@keyframes flash {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0); }
+  20%, 60% { box-shadow: 0 0 0 5px rgba(251, 191, 36, 0.9); }
+}

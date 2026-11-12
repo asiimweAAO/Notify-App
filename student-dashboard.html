@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOTIFY | Student Dashboard</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%94%94%3C/text%3E%3C/svg%3E">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/design.css">
+  <link rel="stylesheet" href="css/portal.css">
+</head>
+
+<body>
+
+  <div id="site-nav"></div>
+
+  <main>
+    <section class="py-5">
+      <div class="container" style="max-width: 760px;">
+
+        <!-- Header -->
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-1">
+          <h1 class="h3 fw-bold mb-0">My Moodle Updates</h1>
+          <div class="d-flex align-items-center gap-2">
+            <span id="syncStatus" class="badge text-bg-secondary">Not synced yet</span>
+            <button id="logoutBtn" class="btn btn-outline-light btn-sm" type="button">Log out</button>
+          </div>
+        </div>
+        <p class="small text-white-50 mb-4">
+          Signed in as <span id="studentEmail"></span> · Read-only view
+        </p>
+
+        <!-- Controls (students can only pull, never post) -->
+        <div class="d-flex flex-wrap gap-2 mb-4">
+          <button id="syncBtn" class="btn btn-primary fw-semibold" type="button">⟳ Connect to Moodle (one-time sync)</button>
+          <button id="notifyBtn" class="btn btn-outline-light" type="button">🔔 Enable notifications</button>
+        </div>
+
+        <p class="small text-white-50 mb-3">
+          <span id="itemCount">0</span> update(s) · Click a card to open it in Moodle
+        </p>
+
+        <!-- Cards are built by student-dashboard.js -->
+        <div id="feed"></div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Password re-verification modal -->
+  <div class="modal fade" id="verifyModal" tabindex="-1" aria-labelledby="verifyTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <form class="modal-content" id="verifyForm" novalidate>
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="verifyTitle">Confirm it’s you</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="small">Enter your password to open <strong id="verifyTarget"></strong> in Moodle.</p>
+          <label for="verifyPassword" class="form-label fw-semibold">Password</label>
+          <input type="password" id="verifyPassword" class="form-control" autocomplete="current-password" required>
+          <div id="verifyError" class="text-danger small mt-2 d-none">Incorrect password. Please try again.</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-primary">Verify &amp; open</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast alerts (in-page fallback for push notifications) -->
+  <div id="toasts" class="toast-container position-fixed top-0 end-0 p-3" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/accounts.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/student-dashboard.js"></script>
+</body>
+</html>
